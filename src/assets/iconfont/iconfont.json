@@ -1,0 +1,58 @@
+{
+  "id": "3710685",
+  "name": "demo1",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "12906226",
+      "name": "学籍管理",
+      "font_class": "xuejiguanli",
+      "unicode": "e6b6",
+      "unicode_decimal": 59062
+    },
+    {
+      "icon_id": "8605760",
+      "name": "用户管理",
+      "font_class": "yonghuguanli",
+      "unicode": "e667",
+      "unicode_decimal": 58983
+    },
+    {
+      "icon_id": "7450620",
+      "name": "课程管理",
+      "font_class": "kechengguanli",
+      "unicode": "e661",
+      "unicode_decimal": 58977
+    },
+    {
+      "icon_id": "11646343",
+      "name": "yrz-01",
+      "font_class": "yrz-",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "12549666",
+      "name": "成绩查询",
+      "font_class": "chengjichaxun-",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "14115966",
+      "name": "临时签到1",
+      "font_class": "linshiqiandao1",
+      "unicode": "e799",
+      "unicode_decimal": 59289
+    },
+    {
+      "icon_id": "35986932",
+      "name": "层级",
+      "font_class": "cengji",
+      "unicode": "e75b",
+      "unicode_decimal": 59227
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+// 尺寸
+$base: 8;
+/* flex */
+.dis-flex {
+  display: flex;
+}
+.dis-in-flex {
+  display: inline-flex;
+}
+.flex-center,
+.flex-align {
+  align-items: center;
+}
+.justify-space {
+  justify-content: space-between;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.align-flex-start {
+  align-items: flex-start !important;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.flex-direaction-column {
+  flex-direction: column;
+}
+.flex-direaction-row {
+  flex-direction: row;
+}
+.flex-1 {
+  flex: 1;
+}
+/* margin */
+@for $i from 1 through 15 {
+  .ml-#{$i * $base} {
+    margin-left: ($i * $base) + px !important;
+  }
+  .mt-#{$i * $base} {
+    margin-top: ($i * $base) + px;
+  }
+  .mb-#{$i * $base} {
+    margin-bottom: ($i * $base) + px;
+  }
+  .mr-#{$i * $base} {
+    margin-right: ($i * $base) + px;
+  }
+  .pl-#{$i * $base} {
+    padding-left: ($i * $base) + px;
+  }
+  .pt-#{$i * $base} {
+    padding-top: ($i * $base) + px;
+  }
+  .pb-#{$i * $base} {
+    padding-bottom: ($i * $base) + px;
+  }
+  .pr-#{$i * $base} {
+    padding-right: ($i * $base) + px;
+  }
+}

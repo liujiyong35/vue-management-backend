@@ -1,0 +1,262 @@
+$primary: #409eff !default;
+$success: #00d100 !default;
+$wraning: #e6a23c !default;
+$danger: #f56c6c !default;
+$gray: #b8b8b8 !default;
+$finish: #5cb87a !default;
+
+$button-space: 16px !default;
+$button-round: 0 !default;
+$button-border-color: #e5e5e5 !default;
+$min-width: 64px !default;
+
+$small-padding: 0 16px !default;
+
+// 渐变色
+$primary-end: $primary !default;
+$button-primary-end: $primary-end !default;
+
+.cd-button {
+  position: relative;
+  padding: 0 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $button-border-color;
+  border-radius: $button-round;
+  background-color: transparent;
+  color: #666;
+  height: 40px;
+  min-width: $min-width;
+  -webkit-box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
+  vertical-align: top;
+  line-height: 1;
+  &:hover {
+    background: #f8f8f8;
+  }
+  &:active {
+    background: #f5f5f5;
+  }
+  + .cd-button {
+    margin-left: $button-space;
+  }
+  > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-prefix {
+    margin-right: 5px;
+  }
+  .icon-suffix {
+    margin-left: 5px;
+  }
+  .link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+  }
+}
+.cd-button-medium {
+  height: 36px;
+}
+.cd-button-small {
+  padding: $small-padding;
+  height: 32px;
+  font-size: 14px;
+  // .icon-prefix {
+  //   margin-right: 2px;
+  // }
+  // .icon-suffix {
+  //   margin-left: 5px;
+  // }
+}
+.cd-button-mini {
+  padding: 0 11px;
+  height: 24px;
+  font-size: 12px;
+  min-width: auto;
+  .icon-prefix {
+    margin-right: 5px;
+  }
+  .icon-suffix {
+    margin-left: 5px;
+  }
+}
+.cd-button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.cd-button-primary {
+  border-width: inherit;
+  background: -webkit-linear-gradient(left, $primary, $button-primary-end);
+  color: #fff;
+  border-color: $primary;
+  &:hover {
+    background: #2170fd;
+  }
+  &:active {
+    background: #125de5;
+  }
+  &.is-border {
+    border-color: $primary;
+    color: $primary;
+    &:hover {
+      background: #ecf1fe;
+    }
+    &:active {
+      background: #e5eefd;
+    }
+  }
+  &.is-text {
+    color: $primary;
+  }
+  &.is-plain {
+    background: none;
+    color: $primary;
+  }
+}
+
+.cd-button-success {
+  background-color: $success;
+  border-color: $success;
+  color: #fff;
+  &:hover {
+    background: #65c484;
+  }
+  &:active {
+    background: #55ae72;
+  }
+  &.is-border {
+    border-color: $success;
+    color: $success;
+    &:hover {
+      background: #ecfff2;
+    }
+    &:active {
+      background: #ecfff2;
+    }
+  }
+}
+.cd-button-warning {
+  background-color: $wraning;
+  border-color: $wraning;
+  color: #fff;
+  &.is-border {
+    background-color: transparent;
+    color: $wraning;
+  }
+}
+.cd-button-danger {
+  background-color: $danger;
+  border-color: $danger;
+  color: #fff;
+  &.is-border {
+    border-color: $danger;
+    color: $danger;
+    &:hover {
+      background: #fef0f0;
+    }
+    &:active {
+      background: #faecec;
+    }
+  }
+  &.is-text {
+    color: $danger;
+  }
+}
+.cd-button-gray {
+  background-color: $gray;
+  border-color: $gray;
+  color: #fff;
+  &.is-border {
+    background-color: transparent;
+    color: $gray;
+  }
+}
+.cd-button-white {
+  background-color: #fff;
+  border-color: #fff;
+  color: $primary;
+}
+.cd-button-finish {
+  background-color: $finish;
+  border-color: $finish;
+  color: #fff;
+  &:hover {
+    background: #5cb87a;
+  }
+  &:active {
+    background: #5cb87a;
+  }
+  &.is-border {
+    border-color: $finish;
+    color: $finish;
+    &:hover {
+      background: #5cb87a;
+    }
+    &:active {
+      background: #5cb87a;
+    }
+  }
+}
+.is-border {
+  border-width: 1px !important;
+  background: #fff;
+}
+.is-text {
+  padding: 0;
+  height: auto !important;
+  border-width: 0;
+  border-color: none;
+  background: none;
+  min-width: auto;
+  vertical-align: middle;
+  &:hover {
+    background: none !important;
+  }
+}
+/** 圆角 */
+.is-round {
+  border-radius: 100px;
+}
+/** 块级按钮 */
+.cd-button-block {
+  display: block;
+  width: 100%;
+  + .cd-button-block {
+    margin-left: 0;
+  }
+}
+.cd-button-text {
+  border-color: transparent;
+}
+/** 加载动画 */
+.icon-loading {
+  animation: loading 1s infinite linear;
+}
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.cd-button-hover-primary:hover {
+  &:not([disabled]) {
+    &.is-border {
+      border-color: $primary;
+      background: none;
+      color: $primary;
+    }
+  }
+  &.is-text {
+    color: $primary;
+  }
+}

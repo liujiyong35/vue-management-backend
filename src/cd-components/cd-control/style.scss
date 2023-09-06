@@ -1,0 +1,15 @@
+.cd-dom-small {
+  height: 32px;
+  // @include webkit(box-sizing, border-box);
+}
+
+::v-deep .input-suffix {
+  .el-input__inner {
+    padding-right: 30px;
+  }
+}
+::v-deep .input-prefix {
+  .el-input__inner {
+    padding-left: 30px;
+  }
+}
